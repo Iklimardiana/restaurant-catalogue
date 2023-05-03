@@ -1,25 +1,15 @@
-class Drawer extends HTMLElement{
-    connectedCallback(){
-        this.render();
-    }
+class Drawer extends HTMLElement {
+  connectedCallback() {
+    this.render();
+  }
 
-    _toggleDrawer(event, drawer) {
-        event.stopPropagation();
-        drawer.classList.toggle('open');
-    }
-    
-    _closeDrawer(event, drawer) {
-        event.stopPropagation();
-        drawer.classList.remove('open');
-    }
-
-    render(){
-        this.innerHTML =`
-        <div class="drawer">
+  render() {
+    this.innerHTML = `
+        <div class="drawer" id="mydrawer">
             <p>MedianaFood</p>
             <ul class=drawer-list>
                 <hr>
-                <li><a class="drawer-item" href="/">Home</a></li>
+                <li><a class="drawer-item" href="#/home">Home</a></li>
                 <hr>
                 <li class="drawer-item"><a href="#/favorite">Favorite</a></li>
                 <hr>
@@ -28,7 +18,7 @@ class Drawer extends HTMLElement{
             </ul>
         </div>
         `;
-    }
+  }
 }
 
 customElements.define('drawer-component', Drawer);

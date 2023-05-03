@@ -1,12 +1,12 @@
-import logo from '../../public/images/icons/logo.png'
+import logo from '../../public/images/icons/logo.png';
 
 class Appbar extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render(){
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <div class="navbar">
             <div class="logo">
                 <a href="/">
@@ -16,7 +16,7 @@ class Appbar extends HTMLElement {
             <button class="hamburger" aria-label="button to open side menu">☰</button>
             <div class="menu">
                 <ul>
-                    <li class="nav_item"><a href="/">Home</a></li>
+                    <li class="nav_item"><a href="#/home">Home</a></li>
                     <li class="nav_item"><a href="#/favorite">Favorite</a></li>
                     <li class="nav_item">
                         <a target="_blank" href="https://github.com/iklimardiana">About Us</a>
@@ -25,7 +25,7 @@ class Appbar extends HTMLElement {
             </div>
         </div>
         `;
-    }
+  }
 }
-  
+
 customElements.define('app-bar', Appbar);

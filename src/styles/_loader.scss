@@ -1,0 +1,27 @@
+
+.loading {
+  top: 50%;
+  left: 42%;
+  position: fixed;
+  display: inline-flex;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid $primary-color;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  animation: spin 1s linear;
+  z-index: 1000;
+
+  &.hide {
+      display: none;
+      animation: none; 
+  }
+}
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

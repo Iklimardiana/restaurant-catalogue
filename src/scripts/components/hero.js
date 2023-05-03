@@ -6,7 +6,7 @@ class HeroElement extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = /* html*/ `
+    this.innerHTML = `
     <div class="hero-container" role="banner" aria-label="Mediana Food Restaurant">
       <div class="hero-text">
         <h1 id="hero-heading">Mediana Food Restaurant</h1>
