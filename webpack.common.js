@@ -5,10 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: {
     app: path.resolve(__dirname, 'src/scripts/index.js'),
-    // sw: path.resolve(__dirname, 'src/scripts/sw.js'),
+    sw: path.resolve(__dirname, 'src/scripts/sw.js'),
   },
   output: {
-    filename: 'app.bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -24,21 +24,21 @@ module.exports = {
             loader: 'css-loader',
           },
           {
-            loader: 'sass-loader'
-          }
+            loader: 'sass-loader',
+          },
         ],
       },
       {
         test: /\.(png|jpe?g|gif)$/,
-        use:[
+        use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath:'images/icons',
-            }
-          }
-        ]
+              outputPath: 'images/icons',
+            },
+          },
+        ],
       },
     ],
   },

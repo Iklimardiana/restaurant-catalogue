@@ -1,0 +1,77 @@
+.resto-review{
+    margin-bottom: 40px;
+
+    .review {
+        .name {
+            color: $primary-color;
+        }
+
+        .date {
+            color: rgb(103, 102, 102);
+        }
+
+        p {
+          i {
+            color: $primary-color;
+          }  
+        }
+    }
+
+    .form-review { 
+        border: $primary-color solid 1.5px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px;
+        background-color: $primary-color;
+        width: 80%;
+        margin: 0 auto;
+
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            label {
+                font-size: .8rem;
+                font-weight: bold;
+                color: white;
+            }
+
+            input {
+                height: 25px;
+                border-radius: 5px;
+                border: $primary-color solid;
+            }
+
+            textarea {
+                height: 55px;
+                border-radius: 5px;
+                border: $primary-color solid;
+            }
+        }
+
+        button {
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            cursor: pointer;
+            padding: 13px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            color: $primary-color;
+            background-color: white;
+
+            &:hover {
+                background-color: #cfcfcf;
+            }
+        }
+    }
+}
