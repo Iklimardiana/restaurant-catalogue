@@ -1,0 +1,45 @@
+hero-element {
+  width: 100%;
+}
+
+.hero-container {
+  display: grid;
+  align-content: center;
+  height: $hero_height;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background: linear-gradient(180deg, #99b7ab98 0%, #252a3477 50%, #99b7ab98 100%);
+  background-position: center;
+  margin-top: 70px;
+  padding: 24px;
+  position: relative;
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: large;
+
+    h1 {
+      margin-bottom: 0px;
+    }
+  }
+
+  picture,
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  picture {
+    position: absolute;
+    z-index: -1;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

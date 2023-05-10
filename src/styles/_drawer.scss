@@ -1,0 +1,47 @@
+.drawer {
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  right: -1000px;
+  transition: right 0.3s ease-in-out;
+  background-color: $primary-color;
+  z-index: 1000;
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+
+  &.open {
+    right: 0;
+  }
+
+  p {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  ul {
+    padding-left: 0;
+    display: block;
+    padding: 10px 20px 20px;
+
+    li {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+        padding: .7rem .5rem;
+        min-width: 44px;
+        min-height: 44px;
+
+        &:hover {
+          text-decoration: underline;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@media screen and (max-width: $handphone) {
+  .navbar {
+    .menu {
+      display: none;
+    }
+
+    .hamburger {
+      display: inline-block;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF !important;
+      font-family: $font-family;
+      border: none;
+      padding-top: 0;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 999;
+      min-width: 44px;
+      min-height: 44px;
+    }
+  }
+
+  resto-list {
+    .container_restoList {
+      grid-template-columns: 1fr;
+
+      .card {
+        height: 400px;
+        padding-bottom: 0px;
+        
+        .card-description {
+          & p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1000px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: $handphone) {
+  drawer-component {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $handphone) {
+  .menu-content {
+    display: flex;
+    justify-content: space-around !important;
+    align-content: center !important;
+
+    h4 {
+        margin: 5px 0px;
+    }
+  }
+  .form-review {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: $handphone) and (max-width: $tablet) {
+  .container-detail {
+    width: 100%;
+  }
+  .card {
+    padding-bottom: 0px;
+    
+    .card-description {
+      & p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  resto-list {
+    .container_restoList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .container-detail {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1000px) {
+  resto-list {
+    .container_restoList {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .form-review {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: $desktop) {
+  .hamburger {
+    display: none;
+  }
+}
