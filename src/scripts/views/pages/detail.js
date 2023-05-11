@@ -6,7 +6,7 @@ import {
   createReviewTemplate,
   createReviewFormTemplate,
 } from '../templates/template-creator';
-import LikeButtonInitiator from '../../utils/like-btn-initiator';
+import LikeButtonPresenter from '../../utils/like-btn-presenter';
 import FavoriteRestoIdb from '../../data/favorite-resto-idb';
 
 const Detail = {
@@ -59,7 +59,7 @@ const Detail = {
     likeButtonContainer.setAttribute('id', 'likeButtonContainer');
     restoDetail.appendChild(likeButtonContainer);
 
-    LikeButtonInitiator.init({
+    LikeButtonPresenter.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       resto: {
         id: detail.id,

@@ -2,7 +2,7 @@ import CONFIG from '../../globals/config';
 
 const createRestoItemTemplate = (Resto) => `
 <div class="card" aria-label="${Resto.name}" tabindex="0" role="listitem"> 
-    <img src="${CONFIG.BASE_IMAGE_URL + Resto.pictureId}" class="card-img-top" alt="gambar ${Resto.name}">
+    <img class="lazyload card-img-top" data-src="${CONFIG.BASE_IMAGE_URL + Resto.pictureId}" alt="gambar ${Resto.name}">
     <p class="rating">
         <i class="fas fa-star"></i>
         ${Resto.rating}
@@ -86,13 +86,11 @@ const createLikedButtonTemplate = () => `
   </button>
 `;
 
-
-
-export { 
-    createRestoItemTemplate,
-    createDetailRestoTemplate ,
-    createReviewTemplate,
-    createReviewFormTemplate,
-    createLikeButtonTemplate,
-    createLikedButtonTemplate
+export {
+  createRestoItemTemplate,
+  createDetailRestoTemplate,
+  createReviewTemplate,
+  createReviewFormTemplate,
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
 };

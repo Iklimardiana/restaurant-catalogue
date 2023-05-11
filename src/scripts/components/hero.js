@@ -1,4 +1,4 @@
-import heroImage from '../../public/images/heros/hero-image_2.jpg';
+// import heroImage from '../../public/images/heros/hero-image_2.jpg';
 
 class HeroElement extends HTMLElement {
   connectedCallback() {
@@ -13,7 +13,8 @@ class HeroElement extends HTMLElement {
         <p>"Setiap suapan adalah kenangan yang tak terlupakan"</p>
       </div>
       <picture>
-        <img src="${heroImage}" alt="Gambar Hero"/>
+      <source media="(max-width: 600px)" srcset="./images/heros/hero-image_2-small.jpg">
+        <img src="./images/heros/hero-image_2-large.jpg" alt="Gambar Hero"/>
       </picture>
     </div>
     `;

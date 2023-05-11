@@ -17,7 +17,7 @@ const assetsToCache = [
   './favicon.png',
   './app.bundle.js',
   './app.webmanifest',
-  './sw.bundle.js',
+  './sw-workbox.bundle.js',
 ];
 
 self.addEventListener('install', (event) => {
